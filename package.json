@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "NODE_ENV=test node_modules/.bin/jest",
-    "lint": "eslint src/**/*.{js,jsx} --quiet",
+    "lint": "node_modules/.bin/eslint src/**/*.{js,jsx} --quiet",
     "flow": "node_modules/.bin/flow"
   },
   "author": "",
@@ -16,6 +16,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-flow": "^6.23.0",
+    "eslint": "^4.13.1",
     "flow-bin": "^0.61.0"
   }
 }
